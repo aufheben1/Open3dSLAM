@@ -33,7 +33,7 @@ class Rotation {
   double magnitude();
 
  private:
-  double data[3];
+  double data[4];
 };
 }  // namespace o3s
 
