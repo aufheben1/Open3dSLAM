@@ -10,6 +10,8 @@ Rotation::Rotation(double x, double y, double z, double w) : data{x, y, z, w} {
   normalize();
 }
 
+Rotation::Rotation(const Position& p) : data{p.x(), p.y(), p.z(), 0.0} {}
+
 Rotation& Rotation::operator=(const Rotation& rhs) {
   if (this != &rhs) {
     data[0] = rhs.data[0];
